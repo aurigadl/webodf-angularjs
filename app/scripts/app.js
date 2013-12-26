@@ -1,13 +1,8 @@
+/*jslint browser:true, unparam: true*/
+/*global define, angular*/
 'use strict';
 
-angular.module('webodfAngularjsApp', [])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
-  });
+angular.module('app', ['webodf'])
+.controller("mainCtrl", function($scope){
+  $scope.data = 'test';
+});

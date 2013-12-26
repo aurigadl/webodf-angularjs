@@ -61,7 +61,7 @@ module.exports = function (grunt) {
     //http://stephenplusplus.github.io/grunt-bower-install/
     'bower-install': {
       target: {
-        src: ['app/index.html'] // point to your HTML file.
+        src: ['index.html'] // point to your HTML file.
       }
     },
 
