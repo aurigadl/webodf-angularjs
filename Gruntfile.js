@@ -57,11 +57,11 @@ module.exports = function (grunt) {
         ]
       }
     },
-    
+
     //http://stephenplusplus.github.io/grunt-bower-install/
     'bower-install': {
       target: {
-        html: 'index.html' // point to your HTML file.
+        src: ['app/index.html'] // point to your HTML file.
       }
     },
 
@@ -147,9 +147,9 @@ module.exports = function (grunt) {
       }
     },
 
-    
 
-    
+
+
     // Compiles Sass to CSS and generates necessary files if requested
     compass: {
       options: {
@@ -222,6 +222,7 @@ module.exports = function (grunt) {
         }]
       }
     },
+
     svgmin: {
       dist: {
         files: [{
@@ -232,6 +233,7 @@ module.exports = function (grunt) {
         }]
       }
     },
+
     htmlmin: {
       dist: {
         options: {
@@ -359,6 +361,7 @@ module.exports = function (grunt) {
     }
   });
 
+  grunt.loadNpmTasks('grunt-bower-install');
 
   grunt.registerTask('serve', function (target) {
     if (target === 'dist') {
