@@ -4,5 +4,5 @@
 
 angular.module('app', ['webodf'])
 .controller("mainCtrl", function($scope){
-  $scope.data = 'test';
+  $scope.file = 'test.odt';
 });
